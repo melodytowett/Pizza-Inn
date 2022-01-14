@@ -1,0 +1,20 @@
+body{
+    background-color: rgb(240, 145, 77);
+}
+.navbar{
+    margin: 10px;
+    height: 60px;
+}
+.container-fluid .navbar-nav .nav-link {
+    color: black;
+    margin-left: 200px;
+    font-weight: bold;
+  }
+  .col-md-6{
+      padding: 50px;
+      line-height: 50px;
+  }
+  #header{
+      text-align: center;
+      padding: 10px;
+  }
