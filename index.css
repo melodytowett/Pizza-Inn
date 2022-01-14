@@ -4,6 +4,7 @@ body{
 .navbar{
     margin: 10px;
     height: 60px;
+    background-color: ;
 }
 .container-fluid .navbar-nav .nav-link {
     color: black;
@@ -17,4 +18,23 @@ body{
   #header{
       text-align: center;
       padding: 10px;
+  }
+  .col-md-4{
+      border: 1px solid skyblue;
+      background:transparent;
+      height: 280px;
+      width: 300px;
+      padding: 10px;
+      margin: 10px;
+      text-align: center;
+
+  }
+  form .btn{
+      margin: 20px;
+      margin-left: 300px;
+  } 
+  footer{
+      background-color: skyblue;
+      padding-left: 20px;
+      margin: 20px;
   }
