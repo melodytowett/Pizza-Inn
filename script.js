@@ -57,6 +57,16 @@
            $(".Clickable").click(function () {
                $("#new-contact").toggle();
            })
+           $("#add-address").click(function () {
+               $("#out").toggle();
+           })
+           })
+           $('#new-contact').submit(function (event) {
+               event.preventDefault();
+               var phoneNo = $("#phne").val();
+               var street = $("#street").val();
+               var county = $("#county").val();
+
            })
         })
     
