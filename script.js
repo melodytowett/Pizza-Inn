@@ -1,9 +1,10 @@
-$(document).ready(function () {
-    $('.btn').click(function (event) {
-        event.preventDefault();
-        $('#hidden').show();
-    });
-})
+// $(document).ready(function () {
+//     $('.btn').click(function (event) {
+//         event.preventDefault();
+//         $('#hidden').show();
+
+//     });
+// })
 // let mySize, myCrust,myToppings,myNumber;
     function pizza (size, crust, toppings,number){
         this.size = size;
@@ -11,23 +12,51 @@ $(document).ready(function () {
         this.toppings = toppings;
         this.number = number;
     }
-    var sizecost,crustCost,toppingsCost,numberPizza;
+    var sizeCost,crustCost,toppingsCost,totalCost,pizzaNumber;
     $(document).ready(function () {
         $('#myForm').submit(function (event) {
             event.preventDefault();
             var pizzaSize = $('#size').val();
             var pizzaCrust = $('#crust').val();
             var pizzaToppings = $('#toppings').val();
-            var pizzaNumber = $('#number').val();
+            var pizzaNumber = parseInt($('#number').val());
             var myPizza = new pizza(pizzaSize, pizzaCrust,pizzaToppings,pizzaNumber);
+            // pizza cost against size
             if (myPizza.size == "Large") {
-                sizecost = 800;
+                sizeCost = 800;
             }
             else if (myPizza.size == "Medium") {
-                sizecost == 400;
+                sizeCost = 400;
             }
             else{
-                sizecost == 200
+                sizeCost = 200
             }
+            // pizza cost with crust
+            if (myPizza.crust =='Cripsy') {
+                crustCost = 100;
+            }else if (myPizza.crust == 'Stuffed') {
+                crustCost = 130;
+            }else{
+                crustCost = 210
+            }
+            //pizza price with toppings
+            if (myPizza.toppings == 'pinneaple') {
+                toppingsCost = 30;
+            }else if (myPizza.toppings == 'beef') {
+                toppingsCost = 40
+            }else{
+                toppingsCost = 60;
+            }
+           totalCost = (sizeCost + crustCost + toppingsCost)*pizzaNumber;
+           $('#hidden').show();
+           $("#quantity").html(pizzaNumber);
+           $("#Total").html(totalCost);
+           $("#type").html(pizzaCrust);
+           $("#top").html(pizzaToppings);
+           //alert(totalCost);
+           $(".Clickable").click(function () {
+               $("#new-contact").toggle();
+           })
+           })
         })
-    })
+    
