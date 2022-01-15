@@ -12,19 +12,7 @@
 </head>
 <body>
     <div class="container">
-        <!-- <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">
-                <img src="images/pizza-removebg-preview.png" alt="" width="100" height="80">
-              </a>
-                <ul class="navbar-nav">
-                    <a class="nav-link"href="#">Home</a>
-                    <a class="nav-link" href="#">Order</a>
-                    <a class="nav-link" href="#">Contact</a>
-                </ul>
-            
-            </div>
-          </nav> -->
+      
           <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
@@ -73,32 +61,64 @@
                         </div>
                     </div>
 
-                    <form>
-                        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                          
-                            <option selected>Open this to select size</option>
-                            <option value="1">Large</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Small</option>
+                    <div class="row">
+                      <div class="col-md-6">
+                    <form id="myForm">
+                       
+                      <label>Open this to select size</label>
+                        <select class="form-select form-select-lg mb-3" id="size" aria-label=".form-select-lg example">
+                            <option value="Large">Large @ 800</option>
+                            <option value="Medium">Medium @ 400</option>
+                            <option value="Small">Small @ 200</option>
                           </select>
-                          
-                          <select class="form-select form-select-lg mb-3" aria-label=".form-select-sm example">
-                            <option selected>Crust you would love us to add</option>
-                            <option value="1">Cripsy</option>
-                            <option value="2">Stuffed</option>
-                            <option value="3">Gluten-free</option>
+                          <label>Crust you would love us to add</label>
+                          <select class="form-select form-select-lg mb-3" id="crust" aria-label=".form-select-sm example">
+                            <option value="Cripsy">Cripsy @100</option>
+                            <option value="Stuffed">Stuffed @130</option>
+                            <option value="Gluten-free">Gluten-free @210</option>
                           </select> 
-                          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                            <option selected>select toppings for my pizza</option>
-                            <option value="1">pinneaple</option>
-                            <option value="2">beef</option>
-                            <option value="3">Cripsy</option>
+                          <label>select toppings for my pizza</label>
+                          <select class="form-select form-select-lg mb-3" id="toppings" aria-label=".form-select-lg example">
+                            <option value="pinneaple">pinneaple @30</option>
+                            <option value="beef">beef @40</option>
+                            <option value="chicken">chicken @60</option>
                           </select>
+                          <label>Selece number you need</label>
                           <input type="number" class="form-control" id="number" placeholder="Number of pizza">
 
                           <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
+                    </div>
+                   
+                   
+                    <div class="col-md-6">
+                    <div id="hidden">
+                      <h6>Thankyou for chosing us.</h6>
+                      <p>We Have received your order. You have ordered <span id="quantity"></span> Pizza  with <span id="type"></span>  crust and <span id="top"></span> Toppings <br> Your Total Bill is:  <span id="Total"></span></p>
+                    </div>
+                    <div class="showing">
+                      <p>For home delivery <span class="Clickable text-primary">Click here!</span></p>
 
+                      <form id="new-contact">
+                            <div id="new-addresses">
+                                <div class="new-address">
+                                    <div class="form-group">
+                                        <label for="new-street">Street</label>
+                                        <input type="text" class="form-control new-street">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="new-county">County</label>
+                                        <input type="text" class="form-control new-county">
+                      
+                                    </div>
+                                </div>
+                            </div>
+                           <span class="btn btn-primary" id="add-address">Chekout</span>
+                    </form>
+
+                    </div>
+                    </div>
+                    </div>
                     <footer>
                         <div class="row" > 
                             <p>Thankyou for visiting us.Incase of any Issue with our customer<br> services contact us via:</p>
