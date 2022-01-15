@@ -42,7 +42,7 @@ body{
   #hidden{
       display: none;
   }
-  #quantity, #Total, #type, #top{
+  #quantity, #Total, #type, #top, #quntity, #amount, #Location{
       color: brown;
       font-size: large;
       font-weight: bold;
@@ -51,12 +51,12 @@ body{
       margin: 20px;
       margin-left: 300px;
   }
-  #new-contact{
+  /* #new-contact{
       display: none;
-  } 
-  #out{
+  }  */
+  /* #out{
       display: none;
-  }
+  } */
   footer{
       background-color: skyblue;
       padding-left: 20px;
