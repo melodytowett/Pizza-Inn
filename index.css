@@ -50,7 +50,13 @@ body{
   form .btn{
       margin: 20px;
       margin-left: 300px;
+  }
+  #new-contact{
+      display: none;
   } 
+  #out{
+      display: none;
+  }
   footer{
       background-color: skyblue;
       padding-left: 20px;
