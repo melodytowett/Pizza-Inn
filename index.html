@@ -79,14 +79,14 @@
                           </select> 
                           <label>select toppings for my pizza</label>
                           <select class="form-select form-select-lg mb-3" id="toppings" aria-label=".form-select-lg example">
-                            <option value="pinneaple">pinneaple @30</option>
-                            <option value="beef">beef @40</option>
-                            <option value="chicken">chicken @60</option>
+                            <option value="pinneaple">pinneaple @130</option>
+                            <option value="beef">beef @240</option>
+                            <option value="chicken">chicken @360</option>
                           </select>
                           <label>Selece number you need</label>
                           <input type="number" class="form-control" id="number" placeholder="Number of pizza">
 
-                          <button type="submit" class="btn btn-primary">Submit</button>
+                          <button type="submit" class="btn btn-primary">Chekout</button>
                     </form>
                     </div>
                    
@@ -94,33 +94,19 @@
                     <div class="col-md-6">
                     <div id="hidden">
                       <h6>Thankyou for chosing us.</h6>
-                      <p>We Have received your order. You have ordered <span id="quantity"></span> Pizza  with <span id="type"></span>  crust and <span id="top"></span> Toppings <br> Your Total Bill is:  <span id="Total"></span></p>
+                      <p>We Have received your order. You have ordered <span id="quantity" ></span> Pizza  with <span id="type"></span>  crust and <span id="top"></span> Toppings <br> Your Total Bill is:  <span id="Total"></span></p>
+                      <P id="out">Thankyou for your Order.We will deliver your Pizza to<br> <span id="Location"></span><br> Total cost Plus delivery cost is <span id="amount"></span></P>
                     </div>
                     <div class="showing">
-                      <p>For home delivery <span class="Clickable text-primary">Click here!</span></p>
+                      <p>Do you want your pizza delivered?</p>
 
                       <form id="new-contact">
-                            <div id="new-addresses">
-                                <div class="new-address">
-                                    <div class="form-group">
-                                        <label for="new-street">Street</label>
-                                        <input type="text" class="form-control new-street" id="street">
-                                    </div> 
-                                    <div class="form-group">
-                                      <label for="new-county">Phone-No</label>
-                                      <input type="text" class="form-control new-county" id="phne">
-                    
-                                  </div>
-
-                                    <div class="form-group">
-                                        <label for="new-county">County</label>
-                                        <input type="text" class="form-control new-county" id="county">
-                      
-                                    </div>
-                                </div>
-                            </div>
-                           <span class="btn btn-primary" id="add-address">Chekout</span>
-                           <P id="out">Thankyou for your Order.We will deliver your Pizza to<br> <span id="Location"></span> delivery cost is <span id="amount"></span></P>
+                        <select class="form-select form-select-lg mb-3" id="deliver" aria-label=".form-select-lg example">
+                          <option value="yes">Yes</option>
+                          <option value="no">No</option>
+                        </select>
+                           <!-- <span class="btn btn-primary" id="add-address">Chekout</span> -->
+      
                     </form>
 
                     </div>
