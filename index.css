@@ -4,7 +4,7 @@ body{
 .navbar{
     margin: 10px;
     height: 60px;
-    background-color: ;
+    background-color:skyblue;
 }
 .container-fluid .navbar-nav .nav-link {
     color: black;
@@ -14,6 +14,10 @@ body{
   .col-md-6{
       padding: 50px;
       line-height: 50px;
+  }
+  .col-md-6 p{
+      font-family: serif;
+      font-size: large;
   }
   #header{
       text-align: center;
@@ -28,6 +32,20 @@ body{
       margin: 10px;
       text-align: center;
 
+  }
+  .form-select{
+      width: 400px;
+  }
+  #number{
+      width: 400px;
+  }
+  #hidden{
+      display: none;
+  }
+  #quantity, #Total, #type, #top{
+      color: brown;
+      font-size: large;
+      font-weight: bold;
   }
   form .btn{
       margin: 20px;
