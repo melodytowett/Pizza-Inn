@@ -1,11 +1,26 @@
-// $(document).ready(function () {
-//     $('.btn').click(function (event) {
-//         event.preventDefault();
-//         $('#hidden').show();
+var pizzaOrder = function () {
+    var size = document.getElementById("size").value;
+    var crust = document.getElementById("crust").value;
+    var toppings = document.getElementById("toppings").value;
+    var number = document.getElementById("number").value;
+    if (size == "") {
+        alert("enter size")
+        return false;
+    }
+    if (crust == "") {
+        alert("Indicate crust you would like")
+        return false;
+    }
+    if (toppings == "") {
+        alert("choose toppings for your pizza")
+        return false;
+    } 
+    if (number == "") {
+        alert("indicate the number of pizza you like")
+        return false;
+    }
+}
 
-//     });
-// })
-// let mySize, myCrust,myToppings,myNumber;
     function pizza (size, crust, toppings,number,deliver){
         this.size = size;
         this.crust = crust;
