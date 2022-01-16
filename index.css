@@ -19,6 +19,11 @@ body{
       font-family: serif;
       font-size: large;
   }
+  #welcm{
+      background-image: url("images/1pizza.jpeg");
+      color:black;
+      font-weight: bolder;
+  }
   #header{
       text-align: center;
       padding: 10px;
