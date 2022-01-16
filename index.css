@@ -28,6 +28,9 @@ body{
       text-align: center;
       padding: 10px;
   }
+  #sizes{
+      background-color: skyblue;
+  }
   .col-md-4{
       border: 1px solid skyblue;
       background:transparent;
@@ -36,7 +39,6 @@ body{
       padding: 10px;
       margin: 10px;
       text-align: center;
-
   }
   .form-select{
       width: 400px;

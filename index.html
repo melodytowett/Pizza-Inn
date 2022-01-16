@@ -21,7 +21,7 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#">Order</a>
@@ -46,27 +46,28 @@
                  <div id="header">
                      <h3>Choose Which Pizza you would want us to deliver.</h3>
                     </div>
-                    <div class="row">
+                    <div class="row" id="sizes">
                         <div class="col-md-4">
                             <p>Large <span>@800</span></p>
-                            <img src="images/large-removebg-preview.png" alt="" srcset="" >
+                            <img src="images/largp.jpeg" alt="" srcset="" >
                         </div>
                         <div class="col-md-4">
                             <p>Medium <span>@400</span></p>
-                            <img src="/images/smallpizz-removebg-preview.png" alt="" srcset="" width="300px">
+                            <img src="images/medium.jpg" alt="" srcset="" width="300px">
                         </div>
                         <div class="col-md-4">
                             <p>Small <span>@200</span></p>
-                            <img src="images/medium-removebg-preview.png" alt="" srcset="" width="250px">
+                            <img src="images/psmall.jpg" alt="" srcset="" width="300px">
                         </div>
                     </div>
 
                     <div class="row">
                       <div class="col-md-6">
                     <form id="myForm">
-                       
+                      
                       <label>Open this to select size</label>
                         <select class="form-select form-select-lg mb-3" id="size" aria-label=".form-select-lg example">
+                        
                             <option value="Large">Large @ 800</option>
                             <option value="Medium">Medium @ 400</option>
                             <option value="Small">Small @ 200</option>
@@ -86,7 +87,7 @@
                           <label>Selece number you need</label>
                           <input type="number" class="form-control" id="number" placeholder="Number of pizza">
 
-                          <button type="submit" class="btn btn-primary">Chekout</button>
+                          <button type="submit" class="btn btn-primary" onclick="pizzaOrder()">Chekout</button>
                     </form>
                     </div>
                     <div class="col-md-6">
