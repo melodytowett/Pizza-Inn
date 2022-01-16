@@ -38,7 +38,7 @@
                     <div class="col-md-6">
                         <img src="images/pizzas-removebg-preview.png" alt="" srcset="" height="300px">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6" id="welcm">
                         <h5>Come and taste the sweetest Pizza of your desire</h5>
                         <p>We are open 24/7.<br> You can also Order and Have it delivered to Your Home.</p>
                     </div>
@@ -89,27 +89,27 @@
                           <button type="submit" class="btn btn-primary">Chekout</button>
                     </form>
                     </div>
-                   
-                   
                     <div class="col-md-6">
+                      <div class="showing">
+                        <p>Do you want your pizza delivered?</p>
+  
+                        <form id="new-contact">
+                          <select class="form-select form-select-lg mb-3" id="deliver" aria-label=".form-select-lg example">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                          </select>
+                             <!-- <span class="btn btn-primary" id="add-address">Chekout</span> -->
+        
+                      </form>
+  
+                      </div>
+
                     <div id="hidden">
                       <h6>Thankyou for chosing us.</h6>
                       <p>We Have received your order. You have ordered <span id="quantity" ></span> Pizza  with <span id="type"></span>  crust and <span id="top"></span> Toppings <br> Your Total Bill is:  <span id="Total"></span></p>
                       <P id="out">Thankyou for your Order.We will deliver your Pizza to<br> <span id="Location"></span><br> Total cost Plus delivery cost is <span id="amount"></span></P>
                     </div>
-                    <div class="showing">
-                      <p>Do you want your pizza delivered?</p>
-
-                      <form id="new-contact">
-                        <select class="form-select form-select-lg mb-3" id="deliver" aria-label=".form-select-lg example">
-                          <option value="yes">Yes</option>
-                          <option value="no">No</option>
-                        </select>
-                           <!-- <span class="btn btn-primary" id="add-address">Chekout</span> -->
-      
-                    </form>
-
-                    </div>
+                  
                     </div>
                     </div>
                     <footer>
